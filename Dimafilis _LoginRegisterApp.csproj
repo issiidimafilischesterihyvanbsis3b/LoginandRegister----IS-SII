@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <!-- x86 lets the app fall back to the built-in Windows Jet engine (no install needed). -->
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RootNamespace>LoginRegisterApp</RootNamespace>
+    <AssemblyName>LoginRegisterApp</AssemblyName>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="LoginForm.Designer.cs"><DependentUpon>LoginForm.cs</DependentUpon></Compile>
+    <Compile Update="RegisterForm.Designer.cs"><DependentUpon>RegisterForm.cs</DependentUpon></Compile>
+    <Compile Update="WelcomeForm.Designer.cs"><DependentUpon>WelcomeForm.cs</DependentUpon></Compile>
+  </ItemGroup>
+
+</Project>
